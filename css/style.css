@@ -8,6 +8,10 @@ body {
   background-color: hsl(214, 17%, 92%);
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 13px;
+  line-height: 1.4;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 .grid-container {
@@ -15,68 +19,98 @@ body {
   grid-template-areas: 
     'daniel daniel jonathan kira'
     'jeanette patrick patrick kira';
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+  max-width: 1200px;
   margin: 20px;
 }
 
-main article .card-summary {
-  font-weight: 600;
+.grid-container article {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
-main article header .avatar {
+.grid-container article .card-header {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.grid-container article header .avatar {
   border-radius: 100%;
+  width: 40px;
+  height: 40px;
 }
 
-main article .card-quote {
+.grid-container article .card-summary {
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 10px 0;
+}
+
+.grid-container article .card-quote {
   font-weight: 500;
+  padding-top: 10px;
 }
 
-main .card-daniel {
+.grid-container .card-daniel {
   background-color: hsl(263, 55%, 52%);
   color: white;
   grid-area: daniel;
 }
 
-main .card-daniel .avatar {
+.grid-container .card-daniel .author-info,
+.grid-container .card-daniel .card-quote {
+  color: hsl(0, 0%, 81%);
+}
+
+.grid-container .card-daniel .avatar {
   border: 3px solid hsl(264, 82%, 80%);
 }
 
-main .card-jonathan {
+.grid-container .card-jonathan {
   background-color: hsl(217, 19%, 35%);
   color: white;
   grid-area: jonathan;
 }
 
-main .card-jonathan .avatar {
+.grid-container .card-jonathan .author-info,
+.grid-container .card-jonathan .card-quote {
+  color: hsl(0, 0%, 81%);
+}
+
+.grid-container .card-jonathan .avatar {
   border: 3px solid hsl(217, 19%, 35%);
 }
 
-main .card-kira {
+.grid-container .card-kira {
   background-color: white;
   color: hsl(217, 19%, 35%);
   grid-area: kira;
 }
 
-main .card-kira .avatar {
+.grid-container .card-kira .avatar {
   border: 3px solid white;
 }
 
-main .card-jeanette {
+.grid-container .card-jeanette {
   background-color: white;
   color: hsl(217, 19%, 35%);
   grid-area: jeanette;
 }
 
-main .card-jeanette .avatar {
+.grid-container .card-jeanette .avatar {
   border: 3px solid white;
 }
 
-main .card-patrick {
+.grid-container .card-patrick {
   background-color: hsl(219, 29%, 14%);
   color: hsl(0, 0%, 81%);
   grid-area: patrick;
 }
 
-main .card-patrick .avatar {
+.grid-container .card-patrick .avatar {
   border: 3px solid hsl(263, 55%, 52%);
 }
