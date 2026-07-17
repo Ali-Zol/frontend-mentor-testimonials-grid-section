@@ -59,6 +59,10 @@ body {
   background-color: hsl(263, 55%, 52%);
   color: white;
   grid-area: daniel;
+  background-image: url('../images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: top right 60px; 
+  background-size: 120px;
 }
 
 .grid-container .card-daniel .author-info,
