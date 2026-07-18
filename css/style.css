@@ -55,6 +55,7 @@ body {
   padding-top: 10px;
 }
 
+/* ===== Daniel card ===== */
 .grid-container .card-daniel {
   background-color: hsl(263, 55%, 52%);
   color: white;
@@ -67,13 +68,14 @@ body {
 
 .grid-container .card-daniel .author-info,
 .grid-container .card-daniel .card-quote {
-  color: hsl(0, 0%, 81%);
+  color: hsl(214, 17%, 92%);
 }
 
 .grid-container .card-daniel .avatar {
   border: 3px solid hsl(264, 82%, 80%);
 }
 
+/* ===== Jonathan card ===== */
 .grid-container .card-jonathan {
   background-color: hsl(217, 19%, 35%);
   color: white;
@@ -82,13 +84,14 @@ body {
 
 .grid-container .card-jonathan .author-info,
 .grid-container .card-jonathan .card-quote {
-  color: hsl(0, 0%, 81%);
+  color: hsl(214, 17%, 92%);
 }
 
 .grid-container .card-jonathan .avatar {
   border: 3px solid hsl(217, 19%, 35%);
 }
 
+/* ===== Kira card ===== */
 .grid-container .card-kira {
   background-color: white;
   color: hsl(217, 19%, 35%);
@@ -99,6 +102,7 @@ body {
   border: 3px solid white;
 }
 
+/* ===== Jeanette card ===== */
 .grid-container .card-jeanette {
   background-color: white;
   color: hsl(217, 19%, 35%);
@@ -109,6 +113,7 @@ body {
   border: 3px solid white;
 }
 
+/* ===== Patrick card ===== */
 .grid-container .card-patrick {
   background-color: hsl(219, 29%, 14%);
   color: hsl(0, 0%, 81%);
@@ -117,4 +122,19 @@ body {
 
 .grid-container .card-patrick .avatar {
   border: 3px solid hsl(263, 55%, 52%);
+}
+
+@media(max-width: 500px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-container .card-kira {
+    order: 5;
+  }
+
+  .grid-container .card-daniel {
+    background-image: none;
+  }
 }
