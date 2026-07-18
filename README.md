@@ -34,6 +34,7 @@ Users should be able to:
 ![Mobile Design](./screenshots/mobile-design.jpg)
 
 ### Links
+- **Live Demo**: [View Live](https://ali-zol.github.io/frontend-mentor-testimonials-grid-section/)
 - **Repository**: [GitHub Repo](https://github.com/Ali-Zol/frontend-mentor-testimonials-grid-section.git)
 
 ## 🛠️ Built With
