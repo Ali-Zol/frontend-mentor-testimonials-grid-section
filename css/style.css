@@ -7,7 +7,7 @@
 body {
   background-color: hsl(214, 17%, 92%);
   font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 13px;
+  font-size: 1rem;
   line-height: 1.4;
   display: grid;
   place-items: center;
@@ -21,21 +21,21 @@ body {
     'jeanette patrick patrick kira';
 
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 1.5rem;
   max-width: 1200px;
-  margin: 20px;
+  margin: 1.5rem;
 }
 
 .grid-container article {
-  padding: 30px;
+  padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 .grid-container article .card-header {
   display: flex;
-  gap: 20px;
-  padding-bottom: 10px;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .grid-container article header .avatar {
@@ -47,12 +47,12 @@ body {
 .grid-container article .card-summary {
   font-weight: 600;
   font-size: 1.25rem;
-  padding: 10px 0;
+  padding: 1rem 0;
 }
 
 .grid-container article .card-quote {
   font-weight: 500;
-  padding-top: 10px;
+  padding-top: 1rem;
 }
 
 /* ===== Daniel card ===== */
