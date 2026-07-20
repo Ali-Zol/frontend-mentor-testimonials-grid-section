@@ -42,6 +42,7 @@ body {
   border-radius: 100%;
   width: 40px;
   height: 40px;
+  border: 3px solid transparent;
 }
 
 .grid-container article .card-summary {
@@ -72,7 +73,7 @@ body {
 }
 
 .grid-container .card-daniel .avatar {
-  border: 3px solid hsl(264, 82%, 80%);
+  border-color: hsl(264, 82%, 80%);
 }
 
 /* ===== Jonathan card ===== */
@@ -87,10 +88,6 @@ body {
   color: hsl(214, 17%, 92%);
 }
 
-.grid-container .card-jonathan .avatar {
-  border: 3px solid hsl(217, 19%, 35%);
-}
-
 /* ===== Kira card ===== */
 .grid-container .card-kira {
   background-color: white;
@@ -98,19 +95,11 @@ body {
   grid-area: kira;
 }
 
-.grid-container .card-kira .avatar {
-  border: 3px solid white;
-}
-
 /* ===== Jeanette card ===== */
 .grid-container .card-jeanette {
   background-color: white;
   color: hsl(217, 19%, 35%);
   grid-area: jeanette;
-}
-
-.grid-container .card-jeanette .avatar {
-  border: 3px solid white;
 }
 
 /* ===== Patrick card ===== */
@@ -121,7 +110,7 @@ body {
 }
 
 .grid-container .card-patrick .avatar {
-  border: 3px solid hsl(263, 55%, 52%);
+  border-color: hsl(263, 55%, 52%);
 }
 
 @media(max-width: 500px) {
